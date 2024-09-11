@@ -1,0 +1,29 @@
+sqlite> .open stud_csv.db
+sqlite> create table student(sid,sname,oops,python,wd,iks,mil);
+sqlite> insert into  student values(20,'raj',34,56,67,45,56);
+sqlite> insert into  student values(21,'nil',34,56,67,45,56);
+sqlite> insert into  student values(22,'anil',34,56,67,45,56);
+sqlite> insert into  student values(23,'vinay',94,86,77,45,56);
+sqlite> insert into  student values(24,'hinal',90,86,77,95,56);
+sqlite> insert into  student values(25,'anu',78,84,77,55,29);
+sqlite> insert into  student values(26,'alan',78,84,56,57,67);
+sqlite> insert into  student values(27,'aman',78,84,56,57,67);
+sqlite> insert into  student values(28,'neil',78,84,56,57,56);
+sqlite> insert into  student values(29,'liza',78,84,56,57,56);
+sqlite> select * from student;
+20|raj|34|56|67|45|56
+21|nil|34|56|67|45|56
+22|anil|34|56|67|45|56
+23|vinay|94|86|77|45|56
+24|hinal|90|86|77|95|56
+25|anu|78|84|77|55|29
+26|alan|78|84|56|57|67
+27|aman|78|84|56|57|67
+28|neil|78|84|56|57|56
+29|liza|78|84|56|57|56
+sqlite> .mode
+current output mode: list
+sqlite> .mode column
+sqlite> .mode csv
+sqlite> .output C:\Users\Anjali\Downloads\sqlite-tools-win-x64-3460100/stud.csv
+sqlite> select * from student;
